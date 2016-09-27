@@ -1,19 +1,8 @@
 import React from 'react';
-
+import Dashboard from '/client/modules/user/containers/dashboard';
 const Home = () => (
   <div>
-    <h1>Mantra</h1>
-    <p>
-      Welcome to Mantra 0.2.0.
-    </p>
-    <ul>
-      <li>
-        Read <a target="_blank" href="https://kadirahq.github.io/mantra/">spec</a>
-      </li>
-      <li>
-        Learn <a target="_blank" href="https://github.com/sungwoncho/mantra-cli#commands">CLI</a>
-      </li>
-    </ul>
+    <Dashboard/>
   </div>
 );
 

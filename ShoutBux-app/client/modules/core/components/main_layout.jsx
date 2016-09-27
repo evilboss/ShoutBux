@@ -1,10 +1,8 @@
 import React from 'react';
 
-const Layout = ({content = () => null }) => (
-  <div>
-    <div>
-      {content()}
-    </div>
+const Layout = ({content = () => null}) => (
+  <div className="row">
+    {content()}
   </div>
 );
 
