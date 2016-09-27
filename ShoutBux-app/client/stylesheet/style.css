@@ -4,7 +4,7 @@
   margin-left: 10px;
 }
 
-.shoutbux,.userBox {
+.shoutbux, .userBox {
   background-color: rgb(240, 247, 254);
 }
 
@@ -38,7 +38,7 @@
 }
 
 .user-container .table th, .table td {
-   border-top: none;
+  border-top: none;
 }
 
 .user-container .tableHeader {
@@ -85,7 +85,7 @@
   background-color: rgb(240, 247, 254);
 }
 
-.shoutBuxfeed-container
+.shoutBuxfeed-container {
   margin: 30px;
   margin-left: 10px;
 }
