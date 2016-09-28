@@ -6,26 +6,28 @@ class Shoutfeed extends React.Component {
   }
 
   render() {
+    const {shouts} = this.props;
     return (
       <div className="shoutBuxfeed-container">
-        <div className="panel panel-default shoutBuxfeed">
-          <div className="panel-body">
-            <div className="panel panel-info">
+
+
+        {shouts.map((shout, index)=>(
+            <div className="panel panel-info" key={index}>
               <div className="panel-heading">
-                <h3 className="panel-title">@
-                  <span className="glyphicon glyphicon-triangle-right" aria-hidden="true">
-                    
-                  </span>
+                <h3 className="panel-title">@{shout.owner}
+                <span className="glyphicon glyphicon-triangle-right" aria-hidden="true">
+                  {shout.text}
+                </span>
 
                 </h3>
               </div>
-              <div className="panel-body">
-
-              </div>
             </div>
-          </div>
-        </div>
+          )
+        )}
+
+
       </div>
+
     );
   }
 }

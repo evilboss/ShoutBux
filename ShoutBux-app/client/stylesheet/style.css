@@ -90,3 +90,11 @@
   margin-left: 10px;
 }
 
+.avatar {
+  border-radius: 7px;
+  box-sizing: border-box;
+  color: #fff;
+  height: 72px;
+  width: 72px;
+}
+

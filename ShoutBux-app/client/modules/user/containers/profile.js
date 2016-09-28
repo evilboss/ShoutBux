@@ -1,20 +1,18 @@
 import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
 
-import Login from '../components/login.jsx';
+import Profile from '../components/profile.jsx';
 
 export const composer = ({context}, onData) => {
-  const {Meteor, Collections, LocalState} = context();
-  const err = LocalState.get('LOGIN_ERROR');
-  onData(null, {err});
+  const {Meteor, Collections} = context();
+
+  onData(null, {});
 };
 
 export const depsMapper = (context, actions) => ({
-  login: actions.users.login,
-  clearErrors: actions.users.clearErrors,
   context: () => context
 });
 
 export default composeAll(
   composeWithTracker(composer),
   useDeps(depsMapper)
-)(Login);
+)(Profile);
