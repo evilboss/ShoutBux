@@ -6,7 +6,7 @@
   },
 
   "plugins": [
-    "react"
+    "react/recommended"
   ],
 
   "parserOptions": {
