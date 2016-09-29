@@ -17,6 +17,7 @@ A twitter like application that lets you post a “shout”(with a max character
 * [Setting Up](#setup)
 * [Running The App](#run)
 * [Testing](#test)
+* [Diagram](#diagram)
 * [Start Page](#start)
 * [Notes](#notes)
 * [Specification](#specs)
@@ -60,6 +61,16 @@ Run tests with:
 ```
 
 **See package.json for more information about testing setup.**
+
+<a name="diagram"></a>
+### High level app design structure diagram
+this diagram was made using [https://www.draw.io/] files are in
+```bash
+cd /diagram && ls
+```
+
+shoutbux.xml and shoutbux.png will demonstrate a small highlevel application design structure
+![diagram](diagram/shoutbux.png)
 
 <a name="start"></a>
 ### Start Page
