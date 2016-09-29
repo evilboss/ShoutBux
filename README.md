@@ -12,12 +12,14 @@ A twitter like application that lets you post a “shout”(with a max character
 * Meteor Js
 
 
-##How to install:
+##Contents:
 * [Installing Meteor](#step1)
 * [Setting Up](#step2)
 * [Running The App](#step3)
-* [Step 4: Install](#step4)
-* [Step 5: Start Page](#step5)
+* [Install](#step4)
+* [Start Page](#step5)
+* [Specification](#specifications)
+* [Notes](#notes)
 
 ### Installing Meteor
 
@@ -33,8 +35,6 @@ curl https://install.meteor.com/ | sh
 
 * Clone this repo <https://github.com/evilboss/ShoutBux>
 * Make sure you've installed Meteor locally
-
-
 
 
 ### Running The App
@@ -84,3 +84,19 @@ You can now login using these credentials
 > npm install
 > meteor
 > ```
+
+
+### Specifications
+* Item 1
+* Item 2
+  * Sub Item 1
+  * Sub Item 2
+
+
+
+*  [x] The application should have a simple login feature
+  * [x] Must implement correct form handling/validation.
+  * [x] Seed the app with atleast 10 users.
+
+* [x] bar
+* [ ] baz
