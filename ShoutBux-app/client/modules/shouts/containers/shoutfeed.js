@@ -7,8 +7,8 @@ export const composer = ({context, userId}, onData) => {
 
   const subscriptionsReady = [Meteor.subscribe('shout.feed', userId).ready];
   const dataReady = ()=> {
-    const shouts = Collections.Shouts.find().fetch();
-    console.log(shouts);
+    const options = {sort: {date: -1}};
+    const shouts = Collections.Shouts.find({}, options).fetch();
     onData(null, {shouts});
   };
   (subscriptionsReady) ? dataReady() : onData();
