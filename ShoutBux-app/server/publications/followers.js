@@ -7,4 +7,8 @@ export default function () {
     const selector = (userId) ? {owner: userId} : {owner: this.userId};
     return Followers.find(selector);
   });
+  Meteor.publish('follower.following', function (userId) {
+    
+  });
+
 }

@@ -88,7 +88,7 @@ You can now login using these credentials
 ### Specs
 * [x] Must be written in NodeJS frameworks (expressJS, meteorJS etc).
 * [x] Must have its own Repository(GitHub, BitBucket etc).
-* [ ] Must have testing.
+* [x] Must have testing.
 * [x] Must use Database storage(MySQL, sqLite or *MongoDB* etc).
 * [x] A README file that contains the information about the application and the steps on how to run it.
 * [ ] Must have a high level app design structure diagram. (Important!)
@@ -108,6 +108,6 @@ You can now login using these credentials
 * [x] Timelines should update realtime.
   * [x] Whenever User X is looking at User Y’s timeline, every update of Y’s timeline should directly reflect to User X’s view of User Y’s timeline.
 * [ ]  Use your imagination for the look and feel of the app.
-* [ ] Candidate should demonstrate test suite implementations.
+* [x] Candidate should demonstrate test suite implementations.
 
 

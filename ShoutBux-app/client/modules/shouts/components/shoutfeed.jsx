@@ -13,7 +13,7 @@ class Shoutfeed extends React.Component {
       <div className="container">
         {shouts.map((shout, index)=>(
             <div className="panel panel-info" key={index}>
-              <ShoutItem userId={shout.owner} shout={shout.text} date={shout.date}/>
+              <ShoutItem shoutId={shout._id} userId={shout.owner} shout={shout.text} date={shout.date}/>
             </div>
           )
         )}

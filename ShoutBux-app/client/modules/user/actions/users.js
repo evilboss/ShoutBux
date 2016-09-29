@@ -4,8 +4,7 @@ export default {
     if (!username || !password) {
       return LocalState.set('LOGIN_ERROR', 'Username & Password are required!');
     }
-
-
+    
     Meteor.loginWithPassword(username, password, (err) => {
       if (err && err.reason) {
         return LocalState.set('LOGIN_ERROR', err.reason);

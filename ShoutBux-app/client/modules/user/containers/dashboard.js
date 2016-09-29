@@ -2,7 +2,7 @@ import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
 import Dashboard from '../components/dashboard.jsx';
 export const composer = ({context, userId}, onData) => {
   const {Meteor, Collections} = context();
-  const subscriptionsReady = [Meteor.subscribe('user.current', userId).ready, Meteor.subscribe('follower.list', userId).ready, Meteor.subscribe('shout.count', userId).ready];
+  const subscriptionsReady = [Meteor.subscribe('user.current', userId).ready, Meteor.subscribe('follower.list', '').ready, Meteor.subscribe('shout.count', userId).ready];
   const dataReady = ()=> {
     const followlist = Collections.Followers.findOne();
     const {followers, following} = (followlist) ? followlist : [];

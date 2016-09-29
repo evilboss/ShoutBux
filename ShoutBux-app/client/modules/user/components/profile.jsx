@@ -17,7 +17,8 @@ class Profile extends React.Component {
         <div className="user-container">
           <div className="panel panel-default userBox">
             <div className="panel-body">
-              <p>Hello <strong>@{user.username}</strong>,welcome to ShoutBux</p>
+              {(Meteor.userId == user._id) ? <h4>Hello <strong>@{user.username}</strong>,welcome to ShoutBux</h4> :
+                <h4><a href="/">Home</a></h4>}
               <div className="row">
                 {(user.profile) ?
                   <div className="col-md-4">

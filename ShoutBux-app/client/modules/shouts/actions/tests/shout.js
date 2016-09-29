@@ -32,12 +32,45 @@ describe('shouts.actions.shout', () => {
       const Meteor = {uuid: spy(), call: spy()};
       const LocalState = {set: spy()};
       const FlowRouter = {go: spy()};
-      actions.create({LocalState, Meteor, FlowRouter}, 'shout');
+      actions.update({LocalState, Meteor, FlowRouter}, 'shout');
       expect(LocalState.set.args[0]).to.deep.equal(['SHOUT_ERROR', null]);
     });
     it('should reject if shout is not there', () => {
       const LocalState = {set: spy()};
-      actions.create({LocalState}, null);
+      actions.update({LocalState}, 'shout', null);
+      const args = LocalState.set.args[0];
+      expect(args[0]).to.be.equal('SHOUT_ERROR');
+    });
+    it('should reject if shoutId is not there', () => {
+      const LocalState = {set: spy()};
+      actions.update({LocalState}, null, 'shout');
+      const args = LocalState.set.args[0];
+      expect(args[0]).to.be.equal('SHOUT_ERROR');
+    });
+    it('should reject if shoutId and shout not there', () => {
+      const LocalState = {set: spy()};
+      actions.update({LocalState}, null, null);
+      const args = LocalState.set.args[0];
+      expect(args[0]).to.be.equal('SHOUT_ERROR');
+    });
+    it('should reject if has more than 32 characters', () => {
+      const LocalState = {set: spy()};
+      actions.update({LocalState}, '123456789012345678901234567890123');
+      const args = LocalState.set.args[0];
+      expect(args[0]).to.be.equal('SHOUT_ERROR');
+    });
+  });
+  describe('delete', () => {
+    it('should clear older LocalState for SHOUT_ERROR', () => {
+      const Meteor = {uuid: spy(), call: spy()};
+      const LocalState = {set: spy()};
+      const FlowRouter = {go: spy()};
+      actions.delete({LocalState, Meteor, FlowRouter}, 'shout');
+      expect(LocalState.set.args[0]).to.deep.equal(['SHOUT_ERROR', null]);
+    });
+    it('should reject if shoutId is not there', () => {
+      const LocalState = {set: spy()};
+      actions.delete({LocalState}, null, 'shout');
       const args = LocalState.set.args[0];
       expect(args[0]).to.be.equal('SHOUT_ERROR');
     });
