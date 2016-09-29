@@ -99,14 +99,14 @@ You can now login using these credentials
   * [x] Seed the app with atleast 10 users.
 
 * [ ] Authorized users can post, edit, delete a “shout” to their own timeline.
-  * [ ]  A “shout” should contain 32 chars max.
+  * [x]  A “shout” should contain 32 chars max.
   * [x] Should contain date posted ( momentjs library can be used)
   * [x]  “Shouts” should be sorted by date posted - latest first.
   * [ ] Only the owner of the “shout” can alter it.
 * [ ] Only users that follow the other can see each others timeline.
-  * [ ] Include this on the seeder where in a user follows other user
-* [ ] Timelines should update realtime.
-  * [ ] Whenever User X is looking at User Y’s timeline, every update of Y’s timeline should directly reflect to User X’s view of User Y’s timeline.
+  * [x] Include this on the seeder where in a user follows other user
+* [x] Timelines should update realtime.
+  * [x] Whenever User X is looking at User Y’s timeline, every update of Y’s timeline should directly reflect to User X’s view of User Y’s timeline.
 * [ ]  Use your imagination for the look and feel of the app.
 * [ ] Candidate should demonstrate test suite implementations.
 
