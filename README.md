@@ -61,30 +61,18 @@ Run tests with:
 ### Start Page
 You can now login using these credentials
 
-    username: logan
-    password: password
-    
-    username: scott         username: tony
-    password: password      password: password
-    
-    
-    username: cable
-    password: password
-    
-    username: xavier
-    password: password
-    
-    username: quicksilver
-    password: password
-    
-  
-
-
-| Tables 	| Are 	| Cool 	|
-|----------	|:-------------:	|------:	|
-| col 1 is 	| left-aligned 	| $1600 	|
-| col 2 is 	| centered 	| $12 	|
-| col 3 is 	| right-aligned 	| $1 	|
+| username 	| password 	|
+|-------------	|:--------:	|
+| logan 	| password 	|
+| scott 	| password 	|
+| cable 	| password 	|
+| xavier 	| password 	|
+| quicksilver 	| password 	|
+| tony 	| password 	|
+| steve 	| password 	|
+| natasha 	| password 	|
+| clint 	| password 	|
+| rhodey 	| password 	|
 
     
 ### Notes
