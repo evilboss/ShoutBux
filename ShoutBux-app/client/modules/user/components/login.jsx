@@ -15,7 +15,7 @@ class Login extends React.Component {
     const {err} = this.props;
     console.log(err);
     return (
-      <div className="col-md-4 col-xs-4">
+      <div className="">
         <div className="user-container">
           <div className="panel panel-default userBox">
             <div className="panel-body"><h4>Already have an account?</h4>

@@ -85,18 +85,29 @@ You can now login using these credentials
 > meteor
 > ```
 
+### Specs
+* [x] Must be written in NodeJS frameworks (expressJS, meteorJS etc).
+* [x] Must have its own Repository(GitHub, BitBucket etc).
+* [ ] Must have testing.
+* [x] Must use Database storage(MySQL, sqLite or *MongoDB* etc).
+* [x] A README file that contains the information about the application and the steps on how to run it.
+* [ ] Must have a high level app design structure diagram. (Important!)
 
-### Specifications
-* Item 1
-* Item 2
-  * Sub Item 1
-  * Sub Item 2
-
-
-
+### Requirements
 *  [x] The application should have a simple login feature
   * [x] Must implement correct form handling/validation.
   * [x] Seed the app with atleast 10 users.
 
-* [x] bar
-* [ ] baz
+* [ ] Authorized users can post, edit, delete a “shout” to their own timeline.
+  * [ ]  A “shout” should contain 32 chars max.
+  * [x] Should contain date posted ( momentjs library can be used)
+  * [x]  “Shouts” should be sorted by date posted - latest first.
+  * [ ] Only the owner of the “shout” can alter it.
+* [ ] Only users that follow the other can see each others timeline.
+  * [ ] Include this on the seeder where in a user follows other user
+* [ ] Timelines should update realtime.
+  * [ ] Whenever User X is looking at User Y’s timeline, every update of Y’s timeline should directly reflect to User X’s view of User Y’s timeline.
+* [ ]  Use your imagination for the look and feel of the app.
+* [ ] Candidate should demonstrate test suite implementations.
+
+

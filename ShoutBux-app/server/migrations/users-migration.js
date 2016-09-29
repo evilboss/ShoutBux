@@ -1,6 +1,7 @@
 /**
  * Created by jr on 9/28/16.
  */
+import {Followers, Shouts} from '/lib/collections/';
 const defautUsers = [
   {
     username: 'logan',
@@ -86,7 +87,6 @@ const defautUsers = [
 const loadUsers = ()=> {
   console.log('seeding 10 users');
   _.each(defautUsers, (user)=> {
-    console.log(user);
     Accounts.createUser(user);
   });
 };

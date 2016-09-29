@@ -10,10 +10,10 @@ class Profile extends React.Component {
   }
 
   render() {
-    const {user} = this.props;
+    const {user, stats} = this.props;
     const defaultPhoto = '/default.jpg';
     return (
-      <div className="col-md-4 col-xs-4">
+      <div className="">
         <div className="user-container">
           <div className="panel panel-default userBox">
             <div className="panel-body">
@@ -42,16 +42,16 @@ class Profile extends React.Component {
               <table className="table">
                 <thead>
                 <tr>
-                  <td className="tableHeader">Tweets</td>
+                  <td className="tableHeader">Shouts</td>
                   <td className="tableHeader">Following</td>
                   <td className="tableHeader">Followers</td>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                  <td className="tableContent">Shouts</td>
-                  <td className="tableContent">Following</td>
-                  <td className="tableContent">Followers</td>
+                  <td className="tableContent">{stats.shouts}</td>
+                  <td className="tableContent">{stats.follwers}</td>
+                  <td className="tableContent">{stats.following}</td>
                 </tr>
                 </tbody>
               </table>

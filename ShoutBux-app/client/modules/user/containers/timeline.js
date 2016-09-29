@@ -1,9 +1,10 @@
 import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
 
-import Follow from '../components/follow.jsx';
+import Timeline from '../components/timeline.jsx';
 
 export const composer = ({context}, onData) => {
   const {Meteor, Collections} = context();
+  console.log('Renderign timeline');
   onData(null, {});
 };
 
@@ -14,4 +15,4 @@ export const depsMapper = (context, actions) => ({
 export default composeAll(
   composeWithTracker(composer),
   useDeps(depsMapper)
-)(Follow);
+)(Timeline);

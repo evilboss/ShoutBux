@@ -1,31 +1,22 @@
 import React from 'react';
-
+import moment from 'moment';
+import ShoutItem from '../containers/shout_item';
 class Shoutfeed extends React.Component {
   constructor(props) {
     super(props);
   }
 
+
   render() {
     const {shouts} = this.props;
     return (
-      <div className="shoutBuxfeed-container">
-
-
+      <div className="container">
         {shouts.map((shout, index)=>(
             <div className="panel panel-info" key={index}>
-              <div className="panel-heading">
-                <h3 className="panel-title">@{shout.owner}
-                <span className="glyphicon glyphicon-triangle-right" aria-hidden="true">
-                  {shout.text}
-                </span>
-
-                </h3>
-              </div>
+              <ShoutItem userId={shout.owner} shout={shout.text} date={shout.date}/>
             </div>
           )
         )}
-
-
       </div>
 
     );

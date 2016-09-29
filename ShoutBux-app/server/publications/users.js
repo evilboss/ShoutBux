@@ -4,7 +4,7 @@ import {check} from 'meteor/check';
 
 export default function () {
   Meteor.publish('user.current', function (userId) {
-    const selector = (userId) ? {_id: usersId} : {_id: this.userId};
+    const selector = (userId) ? {_id: userId} : {_id: this.userId};
     return Meteor.users.find(selector);
   });
 }

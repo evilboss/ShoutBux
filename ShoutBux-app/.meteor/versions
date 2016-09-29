@@ -53,12 +53,14 @@ mobile-experience@1.0.4
 mobile-status-bar@1.0.12
 modules@0.7.6
 modules-runtime@0.7.6
+momentjs:moment@2.11.2
 mongo@1.1.12
 mongo-id@1.0.5
 npm-bcrypt@0.9.1
 npm-mongo@1.5.48
 observe-sequence@1.0.12
 ordered-dict@1.0.8
+panter:moment-reactive@1.0.0
 percolate:migrations@0.9.8
 promise@0.8.4
 random@1.0.10
