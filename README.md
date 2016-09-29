@@ -108,7 +108,7 @@ You can now login using these credentials
 * [x] Must have testing.
 * [x] Must use Database storage(MySQL, sqLite or *MongoDB* etc).
 * [x] A README file that contains the information about the application and the steps on how to run it.
-* [ ] Must have a high level app design structure diagram. (Important!)
+* [x] Must have a high level app design structure diagram. (Important!)
 
 <a name="reqs"></a>
 ### Requirements
