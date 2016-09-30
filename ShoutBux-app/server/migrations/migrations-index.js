@@ -7,6 +7,9 @@
  * V1: seed app with 10 default users
  * V2: seed users with shouts
  */
+
+import {Followers} from '/lib/collections/';
+
 const runToLatest = () => {
   Migrations.migrateTo('latest');
 };
