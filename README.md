@@ -125,5 +125,5 @@ You can now login using these credentials
   * [x] Include this on the seeder where in a user follows other user
 * [x] Timelines should update realtime.
   * [x] Whenever User X is looking at User Y’s timeline, every update of Y’s timeline should directly reflect to User X’s view of User Y’s timeline.
-* [ ]  Use your imagination for the look and feel of the app.
+* [x]  Use your imagination for the look and feel of the app.
 * [x] Candidate should demonstrate test suite implementations.

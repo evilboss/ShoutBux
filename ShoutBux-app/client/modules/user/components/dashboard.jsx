@@ -14,9 +14,8 @@ class Dashboard extends React.Component {
     const {user, stats, userId} = this.props;
     return (
       <div>
-
         {(user) ?
-          <div className="row">
+          <div className="bg row">
             <div className="col-md-4 col-xs-4">
               <Profile user={user} stats={stats}/>
               <Follow />

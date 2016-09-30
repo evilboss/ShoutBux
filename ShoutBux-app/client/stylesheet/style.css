@@ -8,6 +8,10 @@
   background-color: rgb(240, 247, 254);
 }
 
+.userBox .table {
+  text-align: center;
+}
+
 .shoutbux .btnGroup {
   margin-top: 10px;
   display: flex;
@@ -27,6 +31,20 @@
 .user-container {
   margin-top: 30px;
   margin-left: 30px;
+}
+
+.login-container {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  width: 40em;
+  margin-top: 14em;
+}
+
+.login-container form input {
+  height: 45px;
+  font-size: 15px;
+  margin: 5px 0;
 }
 
 .user-container h4 {
@@ -66,6 +84,23 @@
   background-color: rgb(240, 247, 254);
 }
 
+.followBox img {
+  height: 45px;
+  width: 45px;
+  float: left;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.followBox .followed {
+  margin-bottom: 10px;
+}
+
+.followed .fullname {
+  color: #333;
+  font-weight: 600;
+}
+
 .follow-container {
   margin-top: 30px;
   margin-left: 30px;
@@ -79,6 +114,10 @@
 
 .follow-container h5 {
   color: gray;
+}
+
+.can-follow {
+  margin-top: 2em;
 }
 
 .shoutBuxfeed {
@@ -98,3 +137,114 @@
   width: 72px;
 }
 
+.shout-actions {
+  display: inline-block;
+  margin: 5px;
+}
+
+.shout-actions .btn {
+  cursor: pointer;
+  padding: 0px 3px;
+  color: #aab8c2;
+  font-size: 17px;
+}
+
+.glyphicon-trash:hover {
+  color: #a94442 !important;
+}
+
+.shout-actions .btn:hover {
+  color: #31b0d5;
+}
+
+.shoutbux-list {
+  margin: 30px;
+  margin-left: 10px;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.btn {
+  margin: 0 2px;
+
+}
+
+.btn-follow {
+  color: #31b0d5;
+  border: 1px solid #31b0d5;
+  background-color: #ececec;
+}
+
+.btn-follow:hover {
+  color: #ececec;
+  border: 1px solid #ececec;
+  background-color: #31b0d5;
+}
+
+.btn-follow span {
+  color: black;
+}
+
+.btnGroup {
+  margin-top: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+.panel-heading .thumbnail {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.panel-heading img {
+  height: 40px;
+  width: 40px;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.panel-heading .col-sm-11,
+.panel-heading .col-sm-1 {
+  padding: 0;
+}
+
+.panel-body, .panel-info {
+  background-image: url("/assets/backgrounds/universe.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.bg {
+  background-image: url("/assets/backgrounds/universe2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.shoutbux-list .panel-body {
+  padding: 0 0 15px 0;
+}
+
+html, body, #react-root {
+  min-height: 100%;
+  height: 100%;
+}
+
+.panel-body-footer {
+  border-top: 1.5px solid #dddddd;
+}
+
+.inline {
+  display: inline-block;
+}

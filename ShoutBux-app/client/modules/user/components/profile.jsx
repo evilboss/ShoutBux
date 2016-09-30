@@ -17,7 +17,8 @@ class Profile extends React.Component {
         <div className="user-container">
           <div className="panel panel-default userBox">
             <div className="panel-body">
-              {(Meteor.userId == user._id) ? <h4>Hello <strong>@{user.username}</strong>,welcome to ShoutBux</h4> :
+              {(Meteor.userId() == user._id) ?
+                <h4>Hello <strong>@{user.username}</strong>,welcome to ShoutBux</h4> :
                 <h4><a href="/">Home</a></h4>}
               <div className="row">
                 {(user.profile) ?
@@ -51,8 +52,8 @@ class Profile extends React.Component {
                 <tbody>
                 <tr>
                   <td className="tableContent">{stats.shouts}</td>
-                  <td className="tableContent">{stats.follwers}</td>
                   <td className="tableContent">{stats.following}</td>
+                  <td className="tableContent">{stats.follwers}</td>
                 </tr>
                 </tbody>
               </table>
