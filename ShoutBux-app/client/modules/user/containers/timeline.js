@@ -4,7 +4,6 @@ import Timeline from '../components/timeline.jsx';
 
 export const composer = ({context}, onData) => {
   const {Meteor, Collections} = context();
-  console.log('Renderign timeline');
   onData(null, {});
 };
 

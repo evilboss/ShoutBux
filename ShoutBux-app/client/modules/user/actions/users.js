@@ -17,7 +17,6 @@ export default {
     if (!toFollowId) {
       return LocalState.set('FOLLOW_ERROR', 'toFollowRequired');
     }
-    console.log('follow');
     Meteor.call('followers.update', toFollowId);
   },
   clearErrors({LocalState}) {
