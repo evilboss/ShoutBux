@@ -9,7 +9,6 @@ export default function (injectDeps, {FlowRouter}) {
   FlowRouter.route('/:userId', {
     name: 'following',
     action(params) {
-      console.log(params.userId);
       mount(MainLayoutCtx, {
         content: () => (<Timeline userId={params.userId}/>)
       });

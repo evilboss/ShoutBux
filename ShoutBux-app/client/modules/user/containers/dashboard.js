@@ -1,28 +1,28 @@
 import {useDeps, composeAll, composeWithTracker, compose} from 'mantra-core';
 import Dashboard from '../components/dashboard.jsx';
 export const composer = ({context, userId}, onData) => {
-  const {Meteor, Collections} = context();
-  const subscriptionsReady = [Meteor.subscribe('user.current', userId).ready, Meteor.subscribe('follower.list', '').ready, Meteor.subscribe('shout.count', userId).ready];
-  const dataReady = ()=> {
-    const followlist = Collections.Followers.findOne();
-    const {followers, following} = (followlist) ? followlist : [];
-    const shoutCount = Collections.Shouts.find().count();
-    const stats = {
-      shouts: shoutCount,
-      follwers: _.size(followers),
-      following: _.size(following),
-    };
-    const user = (userId) ? Meteor.users.findOne({_id: userId}) : Meteor.user();
-    onData(null, {user, stats});
-  };
-  (subscriptionsReady) ? dataReady() : onData();
+	const {Meteor, Collections} = context();
+	const subscriptionsReady = [Meteor.subscribe('user.current', userId).ready, Meteor.subscribe('follower.list', userId).ready, Meteor.subscribe('shout.count', userId).ready];
+	const dataReady = ()=> {
+		const followlist = (userId) ? Collections.Followers.findOne({owner: userId}) : Collections.Followers.findOne({owner: Meteor.userId()});
+		const {followers, following} = (followlist) ? followlist : [];
+		const shoutCount = Collections.Shouts.find().count();
+		const stats = {
+			shouts: shoutCount,
+			follwers: _.size(followers),
+			following: _.size(following),
+		};
+		const user = (userId) ? Meteor.users.findOne({_id: userId}) : Meteor.user();
+		onData(null, {user, stats});
+	};
+	(subscriptionsReady) ? dataReady() : onData();
 };
 
 export const depsMapper = (context, actions) => ({
-  context: () => context
+	context: () => context
 });
 
 export default composeAll(
-  composeWithTracker(composer),
-  useDeps(depsMapper)
+	composeWithTracker(composer),
+	useDeps(depsMapper)
 )(Dashboard);

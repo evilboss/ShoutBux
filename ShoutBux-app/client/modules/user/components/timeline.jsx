@@ -7,7 +7,6 @@ class Timeline extends React.Component {
 
   render() {
     const {userId} = this.props;
-    console.log(userId);
     return (
       <div>
         <Dashboard userId={userId}/>
