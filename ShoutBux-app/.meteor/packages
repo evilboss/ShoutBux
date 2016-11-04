@@ -27,3 +27,4 @@ percolate:migrations          # A simple migration system for Meteor supporting 
 digilord:faker                # Faker.js packaged for Meteor. Generate massive amounts of fake data
 panter:moment-reactive        # In a reactive context you can use now momentReactive instead of moment and it will invalidate this context every second.
 fortawesome:fontawesome
+meson:electron
