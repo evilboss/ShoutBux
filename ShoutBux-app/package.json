@@ -1,6 +1,6 @@
 {
   "name": "ShoutBux-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ShoutBux-app",
   "scripts": {
     "test": "mocha .scripts/mocha_boot.js client/**/tests/**/*.js --compilers js:babel-core/register",

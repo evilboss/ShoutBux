@@ -1,0 +1,19 @@
+{
+  "public": {
+  },
+  "private": {
+  },
+  "electron": {
+    "name": "ShoutBux",
+    "icon": {
+      "darwin": "resources/icons/mac/icon.icns"
+    },
+    "version": "0.1.1",
+    "description": "A twitter like application that lets you post a “shout”(with a max character limit) to your timeline.",
+    "height": 500,
+    "width": 800,
+    "title-bar-style": "hidden",
+    "frame": true,
+    "resizable": true
+  }
+}
